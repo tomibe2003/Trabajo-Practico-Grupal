@@ -10,17 +10,73 @@
         
         <header>
             <h1>Oficina de Turismo y Asuntos Mágicos de Hogsmeade</h1>
-            <h2>  El único pueblo totalmente mágico de Gran Bretaña</h2>
+            <h2>Aqui podra encontrar toda la información necesaria para planear su visita a nuestro encantador pueblo mágico</h2>
         </header>
 
         <nav>            
-            <a href="index.html"> Pagina de inicio </a>
-            <a href="ciudad.html"> Historia e identidad</a>
-            <a href="lugares.html"> Lugares de interes</a>
-        </nav>
+            <a href="index.html" aria-label="Inicio"> Pagina de inicio </a>|
+            <a href="ciudad.html" aria-label="Historia e identidad"> Historia e identidad</a>|
+            <a href="lugares.html" aria-label="Lugares de interés"> Lugares de interés</a>|
 
         <main>
             
+            <h2>Para solicitar una visita a Hogsmeade complete el siguiente formulario:</h2>
+            <form>
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="correo">Correo Electronico</label>
+                <input type="email" id="correo" name="correo" required><br>
+
+                <label for="telefono">Telefono/ Frecuencia de lechuza</label>
+                <input type="tel" id="telefono" name="telefono"><br>
+
+                <label for="fecha">Fecha prevista de llegada</label>
+                <input type="date" id="fecha" name="fecha"><br>
+
+                <label for="categoria">Seleccione su categoria (mago/muggle/etc...):</label>
+                    <select id="categoria" name="categoria">
+                            <option value="">Selecciona una opción</option>
+                            <option value="Mago-puro">Mago / Bruja de sangre pura</option>
+                            <option value="Mago-mestizo">Mago / Bruja de sangre mestiza</option>
+                            <option value="Map-min">Mapeado por el Ministerio</option>
+                            <option value="Est-int">Estudiante de intercambio</option>
+                            <option value="Muggle">Muggle con permiso especial de la Dirección de Hogwarts</option>
+                    </select><br>
+
+                <h2>Preferencia de Hospedaje o Destino (seleccione una o mas):</h2>
+
+                <label for="Tres-Escobas">Cerveza de Mantequilla en Las Tres Escobas</label>
+                <input type="checkbox" id="Tres-Escobas" name="Tres-Escobas" value="Tres-Escobas"><br>
+
+                <label for="Honeydukes">Compras de golosinas en Honeydukes</label>
+                <input type="checkbox" id="Honeydukes" name="Honeydukes" value="Honeydukes"><br>
+
+                <label for="Tres-gritos">Visita a la Casa de los Gritos</label>
+                <input type="checkbox" id="Tres-gritos" name="Tres-gritos" value="Tres-gritos"><br>
+
+                <label for="Zonko">Artículos de broma en Zonko</label>
+                <input type="checkbox" id="Zonko" name="Zonko" value="Zonko"><br>
+
+                <label for="Otros">Otros destinos</label>
+                <input type="checkbox" id="Otros" name="Otros" value="Otros"><br>
+
+                <label for="Otros-destinos">Si marco "Otros destinos", por favor indique cuáles:</label> <br>
+                <textarea id="Otros-destinos" name="Otros-destinos" rows="8" >Los otros destinos que me gustaría visitar son...</textarea><br>
+
+                <h2>¿Posee Varita Regulada o Licencia de Aparición?</h2>
+                <label for="si">SI</label>
+                <input type="radio" id="si" value="si">
+                <label for="no">NO</label>
+                <input type="radio" id="no" value="no"><br>
+
+                <label for="Espec-magic"><h2>Especificaciones mágicas</h2></label> <br>
+                <textarea id="Espec-magic" name="Espec-magic" rows="8" >Aqui puede aclarar si viaja con mascotas (búho, gato, sapo), equipaje especial o alergias a ingredientes de pociones, etc...</textarea><br>
+
+                <button type="submit">Enviar formulario</button>
+
+            </form>
+
             <h2>Datos de Nuetra oficina</h2>
             <ul>
                 <li>Dirección: Calle Principal <mark>(frente a Las Tres Escobas)</mark>, Hogsmeade, Escocia. </li>
@@ -35,12 +91,21 @@
                         <li>Autobús Noctámbulo.</li>
                     </Ul>
                 </li>
-            </ul>
+            </ul><br>
+
 
         </main>
 
-
-        <footer></footer>
+        <footer>
+            <nav>
+                <a href="index.html" aria-label="Inicio"> Inicio</a>|
+                <a href="ciudad.html" aria-label="Historia e identidad"> Historia e identidad</a>|
+                <a href="lugares.html" aria-label="Lugares de interés"> Lugares de interés</a>|
+            </nav>
+            <p> Propiedad del Concejo Municipal de Hogsmeade y el Ministerio de Magia.</p>
+            <p> Hogsmeade - sitio turístico</p>
+            <p> © 2026</p>
+        </footer>
         
     </body>
 </html>
