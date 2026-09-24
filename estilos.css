@@ -1,0 +1,255 @@
+/* ===========================================================
+Dentro del <head> de lugares.html, debajo del <title>, poner:
+
+<link rel="stylesheet" href="lugares.css">
+
+
+/* -----------------------------------------------------------
+   PASO 1: estilos generales de toda la página.
+   El selector "body" afecta a todo el contenido visible.
+   Lo que se define acá lo heredan los demás elementos.
+   ----------------------------------------------------------- */
+body {
+    background-color: #12192b;   /* azul noche, como el cielo de Hogsmeade */
+    color: #e8ecf4;              /* color del texto: blanco nieve */
+    font-family: Georgia, serif; /* fuente con aire antiguo */
+    line-height: 1.7;            /* separación entre renglones, se lee mejor */
+    margin: 0;                   /* saca el margen que el navegador pone solo */
+    padding: 0;
+}
+
+
+/* -----------------------------------------------------------
+   PASO 2: los títulos.
+   h1 es el título principal, h2 los de cada sección
+   y h3 el nombre de cada lugar.
+   ----------------------------------------------------------- */
+h1 {
+    font-size: 48px;
+    color: #e0a542;              /* dorado, como la luz de una vela */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #e8ecf4;
+    border-bottom: 2px solid #e0a542;  /* línea dorada debajo del título */
+    padding-bottom: 6px;               /* separa el texto de la línea */
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #e0a542;
+    margin-bottom: 5px;
+}
+
+
+/* -----------------------------------------------------------
+   PASO 3: la cabecera (etiqueta <header>).
+   Es la presentación de la página.
+   ----------------------------------------------------------- */
+header {
+    background-color: #0a0f1c;   /* un poco más oscuro que el fondo */
+    text-align: center;          /* centra el texto */
+    padding: 60px 20px;          /* 60px arriba y abajo, 20px a los costados */
+}
+
+header p {
+    max-width: 700px;            /* limita el ancho del párrafo */
+    margin-left: auto;           /* estos dos "auto" centran el bloque */
+    margin-right: auto;
+    color: #98a4bd;              /* gris claro, menos protagonismo */
+}
+
+
+/* -----------------------------------------------------------
+   PASO 4: el menú de navegación (<nav>).
+   Se estilan los enlaces <a> que están adentro.
+   ----------------------------------------------------------- */
+nav {
+    background-color: #0a0f1c;
+    text-align: center;
+    padding: 12px;
+    border-top: 1px solid #98a4bd;
+    border-bottom: 1px solid #98a4bd;
+}
+
+nav a {
+    color: #e8ecf4;
+    text-decoration: none;       /* saca el subrayado de los enlaces */
+    margin: 0 10px;              /* espacio a los costados de cada enlace */
+}
+
+/* :hover se aplica cuando el mouse pasa por encima */
+nav a:hover {
+    color: #e0a542;
+    text-decoration: underline;
+}
+
+
+/* -----------------------------------------------------------
+   PASO 5: el contenido principal (<main>).
+   Se limita el ancho y se centra para que no quede
+   una línea de texto larguísima en pantallas grandes.
+   ----------------------------------------------------------- */
+main {
+    max-width: 900px;
+    margin: 0 auto;              /* 0 arriba/abajo, auto a los costados = centrado */
+    padding: 30px 20px;
+}
+
+
+/* -----------------------------------------------------------
+   PASO 6: las tarjetas de cada lugar (<article>).
+   Cada lugar queda dentro de un recuadro con fondo propio.
+   ----------------------------------------------------------- */
+article {
+    background-color: #1b2438;
+    border-left: 4px solid #e0a542;  /* franja dorada a la izquierda */
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+
+/* -----------------------------------------------------------
+   PASO 7: las imágenes y sus epígrafes.
+   <figure> agrupa la imagen con su <figcaption>.
+   ----------------------------------------------------------- */
+figure {
+    margin: 15px 0;              /* 15px arriba y abajo, 0 a los costados */
+}
+
+img {
+    max-width: 100%;             /* nunca se sale del ancho disponible */
+    height: auto;                /* mantiene la proporción de la foto */
+    border: 2px solid #98a4bd;
+}
+
+figcaption {
+    font-size: 14px;
+    font-style: italic;
+    color: #98a4bd;
+    margin-top: 5px;
+}
+
+
+/* -----------------------------------------------------------
+   PASO 8: la tabla de horarios y precios.
+   border-collapse une los bordes de las celdas en uno solo.
+   ----------------------------------------------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+caption {
+    font-style: italic;
+    color: #98a4bd;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* th son las celdas de encabezado, td las celdas normales */
+th, td {
+    border: 1px solid #98a4bd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2f5d50;   /* verde de los carteles del pueblo */
+    color: #e8ecf4;
+}
+
+
+/* -----------------------------------------------------------
+   PASO 9: el bloque de consejos (<aside>).
+   Va en color pergamino para que contraste con el resto.
+   ----------------------------------------------------------- */
+aside {
+    background-color: #f2e7d0;
+    color: #2a2317;              /* texto oscuro, porque el fondo es claro */
+    padding: 20px 25px;
+    margin: 40px 0;
+}
+
+/* Los títulos y la lista de adentro del aside también cambian */
+aside h2 {
+    color: #2a2317;
+    border-bottom-color: #2a2317;
+    margin-top: 0;
+}
+
+
+/* -----------------------------------------------------------
+   PASO 10: las preguntas frecuentes (<details> y <summary>).
+   <summary> es la pregunta visible, se abre al hacer click.
+   ----------------------------------------------------------- */
+details {
+    background-color: #1b2438;
+    border: 1px solid #98a4bd;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+}
+
+summary {
+    cursor: pointer;             /* el mouse muestra la manito */
+    font-weight: bold;
+    color: #e8ecf4;
+}
+
+summary:hover {
+    color: #e0a542;
+}
+
+
+/* -----------------------------------------------------------
+   PASO 11: los enlaces que están dentro del contenido.
+   ----------------------------------------------------------- */
+main a {
+    color: #e0a542;
+}
+
+main a:hover {
+    color: #ffffff;
+}
+
+
+/* -----------------------------------------------------------
+   PASO 12: el pie de página (<footer>).
+   ----------------------------------------------------------- */
+footer {
+    background-color: #0a0f1c;
+    text-align: center;
+    padding: 30px 20px;
+    color: #98a4bd;
+    font-size: 14px;
+    border-top: 1px solid #e0a542;
+}
+
+footer a {
+    color: #e0a542;
+}
+
+
+/* -----------------------------------------------------------
+   PASO 13: ajuste para celulares.
+   La regla @media aplica lo de adentro solo cuando la
+   pantalla mide 600px de ancho o menos.
+   ----------------------------------------------------------- */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        display: block;          /* cada enlace en su propia línea */
+        margin: 6px 0;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+}
