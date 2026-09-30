@@ -43,3 +43,46 @@ main {
     margin: 0 auto;
     padding: 30px 20px;
 }
+
+article {
+    background-color: #1b2438;
+    border-left: 4px solid #e0a542;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+img{
+    border: 2px solid #98a4bd;
+}
+
+figcaption{
+    font-size: 14px;
+    font-style: italic;
+    color: :#98a4bd;
+    margin-top: 5px;
+}
+
+aside {
+    background-color: #f2e7d0;
+    color: #2a2317;
+    padding: 20px 25px;
+    margin: 40px 0;
+}
+
+aside h2{
+    color: #2a2317;
+    border-bottom-color: #2a2317;
+    margin-top: 0;
+}
+
+footer{
+    background-color: #0a0f1c;
+    padding: 30px 20px;
+    font-size: 14px;
+    color: #98a4bd;
+}
+
+footer a{
+    color: #e0a542;
+    text-decoration: none;
+}
