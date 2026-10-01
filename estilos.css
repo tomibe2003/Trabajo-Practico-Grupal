@@ -19,29 +19,29 @@ body {
 }
 
 
-/* -----------------------------------------------------------
-   PASO 2: los títulos.
-   h1 es el título principal, h2 los de cada sección
-   y h3 el nombre de cada lugar.
-   ----------------------------------------------------------- */
+
 h1 {
-    font-size: 48px;
-    color: #e0a542;              /* dorado, como la luz de una vela */
+    color: #e0a542;
+    font-size: 48px; 
     margin-bottom: 10px;
+    text-align: center;
 }
 
-h2 {
+h2{
     font-size: 30px;
     color: #e8ecf4;
-    border-bottom: 2px solid #e0a542;  /* línea dorada debajo del título */
-    padding-bottom: 6px;               /* separa el texto de la línea */
-    margin-top: 40px;
+    border-bottom: 2px solid #e0a542;
+    padding-bottom: 6px;
 }
 
 h3 {
-    font-size: 22px;
     color: #e0a542;
+    font-size: 22px;
     margin-bottom: 5px;
+}
+
+section{
+    margin-bottom: 30px;
 }
 
 
@@ -100,15 +100,17 @@ main {
 }
 
 
-/* -----------------------------------------------------------
-   PASO 6: las tarjetas de cada lugar (<article>).
-   Cada lugar queda dentro de un recuadro con fondo propio.
-   ----------------------------------------------------------- */
+
 article {
     background-color: #1b2438;
-    border-left: 4px solid #e0a542;  /* franja dorada a la izquierda */
+    border-left: 4px solid #e0a542;
     padding: 20px;
     margin-bottom: 25px;
+}
+
+p{
+    margin-bottom: 15 px;
+    
 }
 
 
