@@ -268,3 +268,6 @@ footer a {
         padding: 20px 15px;
     }
 }
+form *, form *::before, form *::after {
+    box-sizing: border-box;
+}
