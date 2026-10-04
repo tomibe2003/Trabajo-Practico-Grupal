@@ -49,17 +49,19 @@ section{
    PASO 3: la cabecera (etiqueta <header>).
    Es la presentación de la página.
    ----------------------------------------------------------- */
+
+/*HEADER*/
+
 header {
-    background-color: #0a0f1c;   /* un poco más oscuro que el fondo */
-    text-align: center;          /* centra el texto */
-    padding: 60px 20px;          /* 60px arriba y abajo, 20px a los costados */
+    background-color: #0a0f1c;
+    text-align: center;
+    padding: 3.5rem 1.5rem;
 }
 
 header p {
-    max-width: 700px;            /* limita el ancho del párrafo */
-    margin-left: auto;           /* estos dos "auto" centran el bloque */
-    margin-right: auto;
-    color: #98a4bd;              /* gris claro, menos protagonismo */
+    max-width: 700px;
+    margin: 0 auto;
+    color: #98a4bd;
 }
 
 
@@ -67,26 +69,29 @@ header p {
    PASO 4: el menú de navegación (<nav>).
    Se estilan los enlaces <a> que están adentro.
    ----------------------------------------------------------- */
+
+/*NAVEGACIÓN*/
+   
 nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     background-color: #0a0f1c;
-    text-align: center;
-    padding: 12px;
+    padding: 1rem;
     border-top: 1px solid #98a4bd;
     border-bottom: 1px solid #98a4bd;
 }
 
 nav a {
     color: #e8ecf4;
-    text-decoration: none;       /* saca el subrayado de los enlaces */
-    margin: 0 10px;              /* espacio a los costados de cada enlace */
+    text-decoration: none;
 }
 
-/* :hover se aplica cuando el mouse pasa por encima */
 nav a:hover {
     color: #e0a542;
     text-decoration: underline;
 }
-
 
 /* -----------------------------------------------------------
    PASO 5: el contenido principal (<main>).
@@ -109,7 +114,7 @@ article {
 }
 
 p{
-    margin-bottom: 15 px;
+    margin-bottom: 15px;
     
 }
 
@@ -222,13 +227,21 @@ main a:hover {
 /* -----------------------------------------------------------
    PASO 12: el pie de página (<footer>).
    ----------------------------------------------------------- */
+
+/* FOOTER */
+
 footer {
     background-color: #0a0f1c;
-    text-align: center;
-    padding: 30px 20px;
     color: #98a4bd;
-    font-size: 14px;
+    text-align: center;
+    padding: 2rem 1.5rem;
     border-top: 1px solid #e0a542;
+    font-size: 0.875rem;
+}
+
+footer nav {
+    border: none;
+    margin-bottom: 1rem;
 }
 
 footer a {
