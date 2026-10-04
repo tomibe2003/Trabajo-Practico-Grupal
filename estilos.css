@@ -267,6 +267,16 @@ footer a {
     main {
         padding: 20px 15px;
     }
+
+form {
+    background-color: #1b2438;   
+    border-left: 4px solid #e0a542; 
+    padding: 25px;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
 }
 form *, form *::before, form *::after {
     box-sizing: border-box;
