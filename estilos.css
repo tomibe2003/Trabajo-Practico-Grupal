@@ -283,9 +283,21 @@ form label {
     marign-top: 15px;
     margin-bottom: 5px;
     color: white;
-    font-weight: bold;}
+    font-weight: bold;
+}
 
-    
+form input[type="text"],form input[type="email"],form input[type="tel"],form input[type="date"],form select,form textarea {
+    width: 100%;                  
+    padding: 10px 12px;           
+    background-color: #0a0f1c;    
+    border: 1px solid #98a4bd;    
+    border-radius: 4px;           
+    color: #e8ecf4;               
+    font-family: Georgia, serif;  
+    font-size: 15px;
+}
+
+
 form *, form *::before, form *::after {
     box-sizing: border-box;
 }
