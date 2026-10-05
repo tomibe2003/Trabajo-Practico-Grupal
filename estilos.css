@@ -296,7 +296,10 @@ form input[type="text"],form input[type="email"],form input[type="tel"],form inp
     font-family: Georgia, serif;  
     font-size: 15px;
 }
-
+form textarea {
+    resize: vertical;             
+    min-height: 100px;
+}
 
 form *, form *::before, form *::after {
     box-sizing: border-box;
