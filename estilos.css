@@ -267,6 +267,7 @@ footer a {
     main {
         padding: 20px 15px;
     }
+}
 
 form {
     background-color: #1b2438;   
@@ -277,7 +278,14 @@ form {
     margin-bottom: 30px;
 }
 
-}
+form label {
+    display: block;
+    marign-top: 15px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;}
+
+    
 form *, form *::before, form *::after {
     box-sizing: border-box;
 }
