@@ -18,7 +18,7 @@ body {
     padding: 0;
 }
 
-
+/*Titulos: tamaño, color, espacios.*/
 
 h1 {
     color: #e0a542;
@@ -40,6 +40,7 @@ h3 {
     margin-bottom: 5px;
 }
 
+/*Secciones: separacion entre contenidos*/
 section{
     margin-bottom: 30px;
 }
@@ -104,7 +105,7 @@ main {
     padding: 30px 20px;
 }
 
-
+/*Articulos: fondo, bordes y espacios.*/
 
 article {
     background-color: #1b2438;
@@ -112,10 +113,15 @@ article {
     padding: 20px;
     margin-bottom: 25px;
 }
-
+/*parrafos: separacion entre textos*/
 p{
+<<<<<<< Updated upstream
     margin-bottom: 15px;
     
+=======
+    margin-bottom: 15px;
+
+>>>>>>> Stashed changes
 }
 
 
