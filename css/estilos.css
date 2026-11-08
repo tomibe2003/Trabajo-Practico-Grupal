@@ -129,9 +129,11 @@ article {
     padding: 20px;
     margin-bottom: 25px;
 }
+
 /*parrafos: separacion entre textos*/
 p{
     margin-bottom: 15px;
+    line-height: 1.7;
 }
 
 
@@ -344,6 +346,7 @@ form button[type="submit"]:hover {
     background-color: #ffffff;
     color: #0a0f1c;
 }
+<<<<<<< HEAD
 
 .flex-cards {
     display: flex;
@@ -356,3 +359,26 @@ form button[type="submit"]:hover {
     flex: 1 1 280px;
     margin-bottom: 0;
 } 
+=======
+/* posicionamiento*/
+body > nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* botones principales*/
+.btn-primary{
+    background-color: var(--color-destacado);
+    border-color: var(--color-destacado);
+    color: var(--color-fondo-oscuro);
+}
+
+/* efecto al pasar el mouse*/
+
+.btn-primary :hover{
+    background-color: var(--color-blanco);
+    border-color: var(--color-blanco);
+    color: var(--color-fondo-oscuro);
+}
+>>>>>>> 3b81b75 (feat: agrego posicionamiento y personalizacion Bootstrap)
