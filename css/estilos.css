@@ -344,3 +344,15 @@ form button[type="submit"]:hover {
     background-color: #ffffff;
     color: #0a0f1c;
 }
+
+.flex-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 20px;
+}
+
+.flex-cards article {
+    flex: 1 1 280px;
+    margin-bottom: 0;
+} 
