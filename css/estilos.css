@@ -1,3 +1,19 @@
+/*  VARIABLES DE COLORES */
+:root{
+    
+    --color-fondo: #12192b;
+    --color-fondo-oscuro: #0a0f1c;
+    --color-fondo-contenido:#1b2438;
+    --color-texto: #e8ecf4;
+    --color-texto-secundario: #98a4bd;
+    --color-destacado: #e0a542;
+    --color-verde: #2f5d50;
+    --color-pergamino: #f2e7d0;
+    --color-texto-oscuro: #2a2317;
+    --color-blanco: #ffffff;
+}
+
+
 /* ===========================================================
 Dentro del <head> de lugares.html, debajo del <title>, poner:
 
@@ -21,7 +37,7 @@ body {
 /*Titulos: tamaño, color, espacios.*/
 
 h1 {
-    color: #e0a542;
+    color: var(--color-destacado);
     font-size: 48px; 
     margin-bottom: 10px;
     text-align: center;
@@ -29,13 +45,13 @@ h1 {
 
 h2{
     font-size: 30px;
-    color: #e8ecf4;
-    border-bottom: 2px solid #e0a542;
+    color: var(--color-texto);
+    border-bottom: 2px solid  var(--color-destacado);
     padding-bottom: 6px;
 }
 
 h3 {
-    color: #e0a542;
+    color: var(--color-destacado);
     font-size: 22px;
     margin-bottom: 5px;
 }
@@ -108,20 +124,14 @@ main {
 /*Articulos: fondo, bordes y espacios.*/
 
 article {
-    background-color: #1b2438;
-    border-left: 4px solid #e0a542;
+    background-color: var(--color-fondo-contenido);
+    border-left: 4px solid  var(--color-destacado);
     padding: 20px;
     margin-bottom: 25px;
 }
 /*parrafos: separacion entre textos*/
 p{
-<<<<<<< Updated upstream
     margin-bottom: 15px;
-    
-=======
-    margin-bottom: 15px;
-
->>>>>>> Stashed changes
 }
 
 
