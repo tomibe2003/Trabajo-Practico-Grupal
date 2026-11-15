@@ -393,7 +393,14 @@ body > nav{
     border-color: var(--color-blanco);
     color: var(--color-fondo-oscuro);
 }
-body.modo-claro {
-    background-color: #f2e7d0;
-    color: #2a2317;
+/* estilos de boton de cambio de modo claro/oscuro*/
+.boton-pergamino {
+    background-color: var(--color-pergamino);
+    color: var(--color-texto-oscuro);
+    border: 1px solid var(--color-destacado);
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-family: georgia, serif;
+    font-size: 16px;
+    cursor: pointer;
 }
