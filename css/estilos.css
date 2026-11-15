@@ -1,4 +1,4 @@
-/*  VARIABLES DE COLORES */
+/*  variables de colores modo oscuro */
 :root{
     
     --color-fondo: #12192b;
@@ -8,6 +8,19 @@
     --color-texto-secundario: #98a4bd;
     --color-destacado: #e0a542;
     --color-verde: #2f5d50;
+    --color-pergamino: #f2e7d0;
+    --color-texto-oscuro: #2a2317;
+    --color-blanco: #ffffff;
+}
+/* variables de colores modo claro*/
+body.modo-claro {
+    --color-fondo:#f2e7d0;
+    --color-fondo-oscuro: #d8c5a3;
+    --color-fondo-contenido: #fffaf0;
+    --color-texto:  #2a2317;
+    --color-texto-secundario: #66563f;
+    --color-destacado: #8b5e23;
+    --color-verde:  #2f5d50;
     --color-pergamino: #f2e7d0;
     --color-texto-oscuro: #2a2317;
     --color-blanco: #ffffff;
@@ -346,7 +359,6 @@ form button[type="submit"]:hover {
     background-color: #ffffff;
     color: #0a0f1c;
 }
-<<<<<<< HEAD
 
 .flex-cards {
     display: flex;
@@ -359,7 +371,7 @@ form button[type="submit"]:hover {
     flex: 1 1 280px;
     margin-bottom: 0;
 } 
-=======
+
 /* posicionamiento*/
 body > nav{
     position: sticky;
@@ -376,9 +388,12 @@ body > nav{
 
 /* efecto al pasar el mouse*/
 
-.btn-primary :hover{
+.btn-primary:hover{
     background-color: var(--color-blanco);
     border-color: var(--color-blanco);
     color: var(--color-fondo-oscuro);
 }
->>>>>>> 3b81b75 (feat: agrego posicionamiento y personalizacion Bootstrap)
+body.modo-claro {
+    background-color: #f2e7d0;
+    color: #2a2317;
+}
