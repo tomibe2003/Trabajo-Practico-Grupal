@@ -407,3 +407,22 @@ body > nav{
     font-size: 16px;
     cursor: pointer;
 }
+
+/* dejo el boton de ocultar y mostrar contenido*/
+.contenido-oculto {
+    display: none;
+    margin-top: 10px;
+    padding: 12px 15px;
+    border-left: 3px solid var(--color-destacado);
+    background-color: var(--color-fondo);
+    border-radius: 4px;
+}
+
+.contenido-oculto.visible {
+    display: block;
+}
+
+.btn-ver-mas {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
