@@ -316,7 +316,7 @@ form label {
     display: block;
     marign-top: 15px;
     margin-bottom: 5px;
-    color: white;
+    color: var(--color-texto);
     font-weight: bold;
 }
 
