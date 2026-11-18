@@ -304,8 +304,8 @@ footer a {
 }
 
 form {
-    background-color: #1b2438;   
-    border-left: 4px solid #e0a542; 
+    background-color: var(--color-fondo-contenido);   
+    border-left: 4px solid var(--color-destacado); 
     padding: 25px;
     border-radius: 6px;
     margin-top: 20px;
