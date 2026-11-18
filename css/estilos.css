@@ -39,6 +39,8 @@ Dentro del <head> de lugares.html, debajo del <title>, poner:
    Lo que se define acá lo heredan los demás elementos.
    ----------------------------------------------------------- */
 body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
     background-color: #12192b;   /* azul noche, como el cielo de Hogsmeade */
     color: #e8ecf4;              /* color del texto: blanco nieve */
     font-family: Georgia, serif; /* fuente con aire antiguo */
