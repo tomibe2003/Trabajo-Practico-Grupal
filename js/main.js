@@ -21,3 +21,18 @@ boton.addEventListener("click", () => {
    mensajeModo.textContent = "";
   }, 2000);
 });
+
+const botonesVerMas = document.querySelectorAll(".btn-ver-mas");
+
+botonesVerMas.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const contenidoExtra = btn.previousElementSibling;
+        contenidoExtra.classList.toggle("visible");
+
+        if (contenidoExtra.classList.contains("visible")) {
+            btn.textContent = "Ver menos";
+        } else {
+            btn.textContent = "Ver más";
+        }
+    });
+});
