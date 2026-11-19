@@ -15,6 +15,8 @@
         <header>
             <h1>Historia e identidad de Hogsmeade</h1>
             <p>Un pueblo <em>enteramente mágico</em> en las Tierras Altas...</p>
+            <button id="btn-modo" class="boton-pergamino"> ☀ Modo claro</button>
+            <p id="mensaje-modo"></p>
         </header>
 
         <!--Bootstrap: colapsa en el botón hamburguesa --> 
@@ -110,14 +112,33 @@
                 </div>
             </section>
 
+
+            <!-- acordeón  con JavaScript -->
             <section>
                 <h2 id="costumbres">Costumbres</h2>
-                <ul> 
-                    <li><strong>Visitas de fin de semana:</strong> llegan los estudiantes y los comercios extienden su horario.</li>
-                    <li><strong>Velas encantadas:</strong> en las fiestas se cuelgan de los árboles y se mantienen encendidas solas.</li>
-                    <li><strong>Correo por lechuza:</strong> la oficina local las organiza por colores según la urgencia del envío.</li>
-                </ul>
+                <p>Tocá cada costumbre para leer de qué se trata.</p>
+                <div class="acordeon">
+                    <div class="acordeon-item">
+                        <h3><button type="button" class="acordeon-boton" aria-expanded="false">Visitas de fin de semana</button></h3>
+                        <div class="acordeon-panel oculto">
+                            <p>Llegan los estudiantes y los comercios extienden su horario.</p>
+                        </div>
+                    </div>
 
+                    <div class="acordeon-item">
+                        <h3><button type="button" class="acordeon-boton" aria-expanded="false">Velas encantadas</button></h3>
+                        <div class="acordeon-panel oculto">
+                            <p>En las fiestas se cuelgan de los árboles y se mantienen encendidas solas.</p>
+                        </div>
+                    </div>
+
+                    <div class="acordeon-item">
+                        <h3><button type="button" class="acordeon-boton" aria-expanded="false">Correo por lechuza</button></h3>
+                        <div class="acordeon-panel oculto">
+                            <p>La oficina local las organiza por colores según la urgencia del envío.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
 
@@ -163,7 +184,10 @@
         </footer>
 
         <!-- Bootstrap para que abra --> 
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- modo claro/oscuro y acordeon--> 
+        <script src="js/main.js"></script>
+        
 
     </body>
 

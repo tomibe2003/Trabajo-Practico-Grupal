@@ -36,3 +36,29 @@ botonesVerMas.forEach((btn) => {
         }
     });
 });
+
+
+
+/* ===== Acordeón de costumbres (ciudad.html) */
+const itemsAcordeon = document.querySelectorAll(".acordeon-item");
+
+itemsAcordeon.forEach((item) => {
+    const botonItem = item.querySelector(".acordeon-boton");
+    const panelItem = item.querySelector(".acordeon-panel");
+
+    botonItem.addEventListener("click", () => {
+        const estabaCerrado = panelItem.classList.contains("oculto");
+
+        //  cierra
+        itemsAcordeon.forEach((otro) => {
+            otro.querySelector(".acordeon-panel").classList.add("oculto");
+            otro.querySelector(".acordeon-boton").setAttribute("aria-expanded", "false");
+        });
+
+        // lo abre si esta cerrado
+        if (estabaCerrado) {
+            panelItem.classList.remove("oculto");
+            botonItem.setAttribute("aria-expanded", "true");
+        }
+    });
+});
