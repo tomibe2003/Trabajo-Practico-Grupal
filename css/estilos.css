@@ -426,3 +426,67 @@ body > nav{
     margin-top: 10px;
     margin-bottom: 15px;
 }
+
+/* ===========================================================
+   ciudad.html --> personalizaciones de Bootstrap, toma los colores de las variables
+   =========================================================== */
+
+/* Navbar: piso las variables de Bootstrap con las nuestras */
+.navbar-hogsmeade {
+    --bs-navbar-color: var(--color-texto);
+    --bs-navbar-hover-color: var(--color-destacado);
+    --bs-navbar-active-color: var(--color-texto);
+    --bs-navbar-brand-color: var(--color-destacado);
+    --bs-navbar-brand-hover-color: var(--color-destacado);
+    background-color: var(--color-fondo-oscuro);
+    border-top-color: var(--color-texto-secundario);
+    border-bottom-color: var(--color-texto-secundario);
+}
+
+/* La página actual se marca en negrita y con una línea dorada */
+.navbar-hogsmeade .nav-link.active {
+    font-weight: 700;
+    border-bottom: 2px solid var(--color-destacado);
+}
+
+/* Botón hamburguesa con fondo dorado, para que el ícono se vea en los dos modos */
+.navbar-hogsmeade .navbar-toggler {
+    background-color: var(--color-destacado);
+    border-color: var(--color-destacado);
+}
+
+/* Al saltar con un enlace del índice, el título no queda tapado por la navbar fija */
+.pagina-ciudad h2[id] {
+    scroll-margin-top: 5rem;
+}
+
+/* Cards de los barrios */
+.card-barrio {
+    background-color: var(--color-fondo-contenido);
+    color: var(--color-texto);
+    border: 1px solid var(--color-destacado);
+    border-left: 4px solid var(--color-destacado);
+    padding: 0;
+}
+
+/* Badge con el tipo de zona */
+.badge-zona {
+    background-color: var(--color-verde);
+    color: var(--color-blanco);
+}
+
+/* Ficha de datos clave (el dl) */
+.ficha-datos {
+    background-color: var(--color-fondo-contenido);
+    border-left: 4px solid var(--color-destacado);
+    padding: 20px;
+    margin: 0;
+}
+
+.ficha-datos dt {
+    color: var(--color-destacado);
+}
+
+.ficha-datos dd {
+    margin: 0 0 0.75rem 0;
+}
